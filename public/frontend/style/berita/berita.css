@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-news-content {
+  margin-top: -50px;
+}
+/*# sourceMappingURL=berita.css.map */

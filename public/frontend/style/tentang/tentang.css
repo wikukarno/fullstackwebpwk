@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.breadcrumb {
+  font-size: 18px;
+  margin-left: -15px;
+}
+
+.section-about-content {
+  margin-top: 40px;
+}
+
+.section-about-content h3 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 32px;
+  color: #004420;
+  margin-bottom: 30px;
+}
+
+.section-about-content p {
+  font-size: 16px;
+}
+
+.section-visimisi-content {
+  margin-top: 70px;
+}
+
+.section-visimisi-content h3 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 32px;
+  color: #004420;
+  margin-bottom: 30px;
+}
+
+.section-visimisi-content p {
+  font-size: 16px;
+}
+
+.section-visimisi-content li {
+  font-size: 16px;
+}
+
+.section-kajian-content {
+  margin-top: 70px;
+}
+
+.section-kajian-content h3 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 32px;
+  color: #004420;
+  margin-bottom: 30px;
+}
+
+.section-kajian-content li {
+  font-size: 16px;
+}
+
+.section-tujuan-content {
+  margin-top: 70px;
+}
+
+.section-tujuan-content h3 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 32px;
+  color: #004420;
+  margin-bottom: 30px;
+}
+
+.section-tujuan-content .sub-content {
+  font-weight: 500;
+  color: #000;
+}
+
+.section-tujuan-content li {
+  font-size: 16px;
+}
+
+.to-top {
+  background-color: #004420;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.to-top:hover {
+  background-color: #0c562e;
+  color: #fff;
+}
+
+.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+/*# sourceMappingURL=tentang.css.map */
