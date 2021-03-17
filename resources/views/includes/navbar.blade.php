@@ -49,9 +49,11 @@
                     Akademik
                 </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('curriculum.index') }}">Kurikulum</a>
-                        <a class="dropdown-item" href="{{ route('structure.index') }}">Struktur Organisasi</a>
-                        <a class="dropdown-item" href="{{ route('lecturer.index') }}">Daftar Dosen</a>
+                        <a class="dropdown-item" href="{{ route('kurikulum.index') }}">Kurikulum</a>
+                        {{-- <a class="dropdown-item" href="{{ route('structure.index') }}">Struktur Organisasi</a> --}}
+                        <a class="dropdown-item" href="#">Satuan Acara Pengajaran</a>
+                        <a class="dropdown-item" href="">Rencana Pembelajaran Studi</a>
+                        {{-- <a class="dropdown-item" href="{{ route('lecturer.index') }}">Daftar Dosen</a> --}}
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -63,6 +65,15 @@
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dosen
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('dosen.index') }}">Biodata Dosen</a>
+                        <a class="dropdown-item" href="{{ route('struktur.index') }}">Struktur Organisasi</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -80,21 +91,17 @@
                     Alumni
                 </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Data alumni</a>
+                        <a class="dropdown-item" href="#">Foto Alumni</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Sumber Daya
+                    Kegiatan Mahasiswa
                 </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Himpunan Mahasiswa</a>
+                        <a class="dropdown-item" href="#">Mahasiswa Aktif</a>
                     </div>
                 </li>
             </ul>

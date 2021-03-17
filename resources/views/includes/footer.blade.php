@@ -6,48 +6,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-12 col-lg-3">
-                                <h5>TENTANG</h5>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="visimisi.html">Visi Misi</a>
-                                    </li>
-                                    <li>
-                                        <a href="sejarah.html">Sejarah</a>
-                                    </li>
-                                    <li>
-                                        <a href="organisasi.html">Struktur Organisasi</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                <h5>DOSEN</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="sejarah.html">Email Dosen</a></li>
-                                    <li><a href="sejarah.html">Blog Dosen</a></li>
-                                    <li><a href="sejarah.html">E - Learning</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                <h5>MAHASISWA</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="sejarah.html">Organisasi Mahasiswa</a></li>
-                                    <li><a href="sejarah.html">Email Mahasiswa</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                <h5>LINK KELUAR</h5>
-                                <ul class="list-unstyled">
-                                    <li><a href="http://forlap.dikti.go.id/">PDPT</a></li>
-                                    <li><a href="http://www.dikti.go.id/">DIKTI</a></li>
-                                    <li><a href="https://www.kopertis10.or.id/">KOPERTIS X</a></li>
-                                    <li><a href="http://www.forlap.dikti.go.id/">INFORMASI DIKTI</a></li>
-                                    <li><a href="http://simlitabmas.dikti.go.id/">PENELITIAN DIKTI</a></li>
-                                    <li><a href="http://aptisi.org/">APTISI</a></li>
-                                    <li><a href="http://sipkd.dikti.go.id/">SIPKPD</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-lg-3">
+                            <div class="col-12 col-lg-5">
                                 <h5>ALAMAT</h5>
                                 <ul class="list-unstyled">
                                     <li class="faculty">FAKULTAS TEKNIK</li>
@@ -60,16 +19,16 @@
                                     <li>Email : info@uir.ac.id</li>
                                     <li class="social-media mt-3">
                                         <a href="#">
-                                            <img src="frontend/images/socialmedia/yt.png" alt="">
+                                            <img src="{{ url('frontend/images/socialmedia/yt.png')}}" alt="">
                                         </a>
                                         <a href="#">
-                                            <img src="frontend/images/socialmedia/ig.png" alt="">
+                                            <img src="{{ url('frontend/images/socialmedia/ig.png')}}" alt="">
                                         </a>
                                         <a href="#">
-                                            <img src="frontend/images/socialmedia/fb.png" alt="">
+                                            <img src="{{ url('frontend/images/socialmedia/fb.png')}}" alt="">
                                         </a>
                                         <a href="#">
-                                            <img src="frontend/images/socialmedia/tw.png" alt="">
+                                            <img src="{{ url('frontend/images/socialmedia/tw.png')}}" alt="">
                                         </a>
                                     </li>
                                 </ul>

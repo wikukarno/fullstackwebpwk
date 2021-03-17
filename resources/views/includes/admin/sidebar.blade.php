@@ -16,48 +16,93 @@
     <span>Dashboard</span></a>
 </li>
 
-<!-- Statistik -->
-<li class="nav-item">
-    <a class="nav-link" href="{{ route('statistic.index')}}">
-    <i class="fas fa-chart-line"></i>
-    <span>Statistik</span>
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <i class="fas fa-fw fa-chart-bar"></i>
+      <span>Statistic</span>
     </a>
-</li>
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Custom Components:</h6>
+        <a class="collapse-item" href="{{ route('statistic.index')}}">Daftar Statistik</a>
+        {{-- <a class="collapse-item" href="cards.html">Cards</a> --}}
+      </div>
+    </div>
+  </li>
 
-<!-- Berita -->
-<li class="nav-item">
-    <a class="nav-link" href="{{ route('newses.index')}}">
-    <i class="far fa-newspaper"></i>
-    <span>Berita</span>
+  <!-- Divider -->
+  <hr class="sidebar-divider">
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      <i class="fas fa-fw fa-school"></i>
+      <span>Akademik</span>
     </a>
-</li>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Custom Components:</h6>
+        <a class="collapse-item" href="{{ route('kurikulums.index')}}">Kurikulum</a>
+        <a class="collapse-item" href="#">SAP</a>
+        <a class="collapse-item" href="">RPS</a>
+      </div>
+    </div>
+  </li>
 
+  <!-- Divider -->
+  <hr class="sidebar-divider">
 
-<!-- Galeri -->
-<li class="nav-item">
-    <a class="nav-link" href="{{ route('galleries.index')}}">
-    <i class="fas fa-images"></i>
-    <span>Galeri</span>
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNews" aria-expanded="true" aria-controls="collapseNews">
+      <i class="fas fa-fw fa-newspaper"></i>
+      <span>Berita</span>
     </a>
-</li>
+    <div id="collapseNews" class="collapse" aria-labelledby="headingNews" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Custom Components:</h6>
+        <a class="collapse-item" href="{{ route('newses.index')}}">Daftar Berita</a>
+      </div>
+    </div>
+  </li>
 
+  <!-- Divider -->
+  <hr class="sidebar-divider">
 
-<!-- Video -->
-<li class="nav-item">
-    <a class="nav-link" href="{{ route('videos.index')}}">
-    <i class="fas fa-video"></i>
-    <span>Video</span>
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMedia" aria-expanded="true" aria-controls="collapseMedia">
+      <i class="fas fa-fw fa-images"></i>
+      <span>Media</span>
     </a>
-</li>
+    <div id="collapseMedia" class="collapse" aria-labelledby="headingMedia" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Custom Components:</h6>
+        <a class="collapse-item" href="{{ route('galleries.index')}}">Daftar Galeri</a>
+        <a class="collapse-item" href="{{ route('videos.index')}}">Daftar Video</a>
+        {{-- <a class="collapse-item" href="{{ route('sliders.index')}}">Slider</a> --}}
+      </div>
+    </div>
+  </li>
+  <!-- Divider -->
+  <hr class="sidebar-divider">
 
-<!-- Dosen -->
-<li class="nav-item">
-    <a class="nav-link" href="{{ route('teachers.index')}}">
-    <i class="fas fa-chalkboard-teacher"></i>
-    <span>Daftar Dosen</span>
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLecturer" aria-expanded="true" aria-controls="collapseLecturer">
+      <i class="fas fa-fw fa-chalkboard-teacher"></i>
+      <span>Dosen</span>
     </a>
-</li>
-
+    <div id="collapseLecturer" class="collapse" aria-labelledby="headingLecturer" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Custom Components:</h6>
+        <a class="collapse-item" href="{{ route('teachers.index')}}">Daftar Dosen</a>
+        <a class="collapse-item" href="{{ route('videos.index')}}">Struktur Organisasi</a>
+      </div>
+    </div>
+  </li>
 
 <!-- Divider -->
 <hr class="sidebar-divider d-none d-md-block">

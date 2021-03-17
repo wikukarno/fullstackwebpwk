@@ -43,12 +43,6 @@
                     @error('date') <div class="text-muted">{{ $message }}</div>@enderror
                 </div>
                 <div class="form-group">
-                    <label for="thumbnail" class="form-control-label">Isi Thumnail Berita</label>
-                    <textarea name="thumbnail"
-                              class="form-control @error('thumbnail') is-invalid @enderror">{{ old('thumbnail') }}</textarea>
-                    @error('thumbnail') <div class="text-muted">{{ $message }}</div>@enderror
-                </div>
-                <div class="form-group">
                     <label for="title" class="form-control-label">Judul Berita</label>
                     <input type="text"
                            name="title"
@@ -56,6 +50,12 @@
                            value="{{ old('title') }}"
                            class="form-control @error('title') is-invalid @enderror"/>
                     @error('title') <div class="text-muted">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="thumbnail" class="form-control-label">Cuplikan Berita</label>
+                    <textarea name="thumbnail"
+                              class="form-control @error('thumbnail') is-invalid @enderror">{{ old('thumbnail') }}</textarea>
+                    @error('thumbnail') <div class="text-muted">{{ $message }}</div>@enderror
                 </div>
                 <div class="form-group">
                     <label for="content" class="form-control-label">Isi Berita</label>

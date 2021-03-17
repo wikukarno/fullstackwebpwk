@@ -22,6 +22,8 @@ Route::get('/news/{id}', 'NewsController@index')
     ->name('news');
 
 
+
+
 Route::prefix('pages/pwk/uir/admin')
     ->namespace('Admin')
     // ->Middleware(['auth', 'admin'])
@@ -34,6 +36,8 @@ Route::prefix('pages/pwk/uir/admin')
         Route::resource('galleries', 'GalleriesController');
         Route::resource('videos', 'VideoController');
         Route::resource('teachers', 'TeacherController');
+        Route::resource('sliders', 'SliderController');
+        Route::resource('kurikulums', 'KurikulumController');
     });
 
 
@@ -50,13 +54,22 @@ Route::prefix('about')
 // End About
 
 // Academy
-Route::prefix('academy')
-    ->namespace('Academy')
+Route::prefix('akademik')
+    // ->namespace('Akademik')
     ->group(function () {
-        Route::resource('curriculum', 'CurriculumController');
-        Route::resource('lecturer', 'LecturerController');
-        Route::resource('structure', 'StructureController');
+        // Route::get('/', 'KurikulumController@index')
+        //     ->name('kurikulum');
+        Route::resource('kurikulum', 'KurikulumController');
     });
 // End Academy
+
+// Dosen
+Route::prefix('dosen')
+    ->namespace('Dosen')
+    ->group(function () {
+        Route::resource('dosen', 'LecturerController');
+        Route::resource('struktur', 'StructureController');
+    });
+// End Dosen
 
 Auth::routes(['verify' => true, 'register' => true]);

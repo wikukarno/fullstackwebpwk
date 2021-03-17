@@ -7,12 +7,16 @@ PWK-Universitas-Islam-Riau
 @section('content')
     <!-- Hero -->
     <section class="section-hero-content">
+        {{-- @foreach ($sliders as $slider) --}}
         <div class="hero-items owl-carousel">
-            <div class="single-hero-items set-bg img-fluid" data-setbg="{{ url('frontend/images/hero/hero_2.jpg')}}">
-            </div>
+            {{-- <div class="single-hero-items set-bg img-fluid" data-setbg="{{ $slider->photo }}">
+            </div> --}}
             <div class="single-hero-items set-bg img-fluid" data-setbg="{{ url('frontend/images/hero/hero_1.jpg')}}">
             </div>
+            <div class="single-hero-items set-bg img-fluid" data-setbg="{{ url('frontend/images/hero/hero_2.jpg')}}">
+            </div>
         </div>
+        {{-- @endforeach --}}
     </section>
     <!-- End Hero -->
 
@@ -63,7 +67,7 @@ PWK-Universitas-Islam-Riau
                     <figure class="figure">
                         <div class="feature-img-hover">
                             <div class="img-content-news">
-                                <img src="{{ Storage::url($news->photo) }}" class="figure-img img-fluid align-self-center w-100">
+                                <img src="{{ Storage::url($news->photo) }}" class="figure-img img-fluid align-self-center w-100 rounded">
                             </div>
                             <a href="#" class="d-flex justify-content-center">
                                 <img src="{{ url('frontend/images/news/eye.png')}}" class="img-fluid align-self-center" alt="">
@@ -76,10 +80,10 @@ PWK-Universitas-Islam-Riau
                             </a>
                             <div class="news-content text-truncate">
                                 <p class="text-truncate d-block">
-                                    {!! $news->thumbnail !!}
+                                    {!! $news->content !!}
                                 </p>
                             </div>
-                            <a href="#" class="btn btn-next">Selengkapnya</a>
+                            <a href="{{ route('news', $news->id)}}" class="btn btn-next">Selengkapnya</a>
                         </figcaption>
                     </figure>
                 </div>
@@ -100,7 +104,7 @@ PWK-Universitas-Islam-Riau
                 <div class="col-12 col-sm-6 col-lg-4">
                     <figure class="figure" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500">
                         <div class="gallery-feature d-flex justify-content-center">
-                            <a href="frontend/images/gallery/img_1.jpg" data-fancybox="gallery">
+                            <a href="{{ Storage::url($gallery->photo) }}" data-fancybox="gallery">
                                 <img src="{{ Storage::url($gallery->photo) }}" class="figure-img img-fluid rounded align-self-center w-100" alt="">
                             </a>
                         </div>
