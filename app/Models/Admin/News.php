@@ -11,7 +11,7 @@ class News extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'photo', 'date', 'title', 'content', 'thumbnail'
+        'photo', 'date', 'title', 'slug', 'content', 'thumbnail'
     ];
 
     protected $hidden = [];

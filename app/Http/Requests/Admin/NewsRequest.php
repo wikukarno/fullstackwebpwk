@@ -24,7 +24,7 @@ class NewsRequest extends FormRequest
     public function rules()
     {
         return [
-            'photo' => 'required|max:255',
+            'photo' => 'required|image',
             'date' => 'required|max:255',
             'title' => 'required|max:255',
             'content' => 'required',

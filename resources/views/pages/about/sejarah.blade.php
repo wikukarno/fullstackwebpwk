@@ -12,7 +12,7 @@
                 <div class="col-12 about-title">
                     <h3>Sejarah Program Studi PWK</h3>
                 </div>
-                <div class="col-12 about-content">
+                <div class="col-12 col-lg-10 about-content">
                     <p>
                         Program Studi Perencanaan Wilayah dan Kota Fakultas Teknik Universitas Islam Riau (Prodi PWK FT-UIR) dirikan berdasarkan izin Direktorat Pendidikan Tinggi Depdiknas Nomor: 2688/D/T/2006 tertanggal 12 Juli 2006. Pendirian program studi ini dimaksudkan
                         untuk menjawab tantangan atas persoalan-persoalan perencanaan dan pengembangan pedesaan, perkotaan, maupun wilayah. Diantaranya adalah permasalahan lingkungan yang terjadi dalam kawasan perkotaan maupun kawasan pedesaan. Masalah

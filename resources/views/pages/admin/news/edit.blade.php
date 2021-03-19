@@ -12,6 +12,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="photo" class="form-control-label">Gambar</label>
+                    <span class="ml-5">Max:255kb (.jpg)</span>
                     <input type="file"
                         name="photo"
                                 required 
@@ -37,13 +38,13 @@
                         class="form-control @error('title') is-invalid @enderror"/>
                     @error('title') <div class="text-muted">{{ $message }}</div>@enderror
                 </div>
-                {{-- <div class="form-group">
-                    <label for="thumbnail" class="form-control-label">Thumbnail Berita</label>
+                <div class="form-group">
+                    <label for="thumbnail" class="form-control-label">Cuplikan Berita</label>
                     <textarea name="thumbnail"
                             required
                             class="form-control @error('thumbnail') is-invalid @enderror">{{ old('thumbnail') ? old('thumbnail') : $news->thumbnail }}</textarea>
                     @error('thumbnail') <div class="text-muted">{{ $message }}</div>@enderror
-                </div> --}}
+                </div>
                 <div class="form-group">
                     <label for="content" class="form-control-label">Isi</label>
                     <textarea name="content"

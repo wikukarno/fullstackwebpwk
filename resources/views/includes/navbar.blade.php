@@ -3,15 +3,15 @@
     <div class="container">
         <div class="row">
             <div class="mail-services mt-3 ml-lg-3">
-                <a href="#"><i class="fas fa-envelope"></i> info@uir.ac.id
+                <a href="#"><i class="fas fa-envelope"></i> pwk@uir.ac.id
                 </a>
             </div>
             <span class="border mx-3"></span>
-            <div class="phone-services mt-3">
+            {{-- <div class="phone-services mt-3">
                 <a href="#">
                     <i class="fas fa-phone-alt"></i> +62.761.72126
                 </a>
-            </div>
+            </div> --}}
         </div>
     </div>
     <hr>
@@ -20,7 +20,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container">
-        <a class="navbar-brand" href="{{ ('/') }}" id="home">
+        <a class="navbar-brand" href="#" id="home">
             <img src="{{ url('frontend/images/logo/Logo.png')}}" id="light-mode" class="light-mode" alt="">
             <img src="{{ url('frontend/images/logo/Logo_Uir_Dark.png')}}" id="dark-mode" class="dark-mode d-none" alt="">
         </a>
@@ -50,10 +50,8 @@
                 </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{ route('kurikulum.index') }}">Kurikulum</a>
-                        {{-- <a class="dropdown-item" href="{{ route('structure.index') }}">Struktur Organisasi</a> --}}
-                        <a class="dropdown-item" href="#">Satuan Acara Pengajaran</a>
-                        <a class="dropdown-item" href="">Rencana Pembelajaran Studi</a>
-                        {{-- <a class="dropdown-item" href="{{ route('lecturer.index') }}">Daftar Dosen</a> --}}
+                        <a class="dropdown-item" href="{{ route('sap.index') }}">Satuan Acara Pengajaran</a>
+                        <a class="dropdown-item" href="{{ route('rps.index') }}">Rencana Pembelajaran Studi</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -61,10 +59,7 @@
                     Penelitian & Inovasi
                 </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="{{ route('jurnal.index') }}">Jurnal</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -76,23 +71,13 @@
                         <a class="dropdown-item" href="{{ route('struktur.index') }}">Struktur Organisasi</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#berita" class="page-scroll">
-                    Berita
-                </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#galeri" class="page-scroll">
-                    Galeri
-                </a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Alumni
                 </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Data alumni</a>
-                        <a class="dropdown-item" href="#">Foto Alumni</a>
+                        <a class="dropdown-item" href="{{ route('photo.index') }}">Foto Alumni</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -100,9 +85,14 @@
                     Kegiatan Mahasiswa
                 </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Himpunan Mahasiswa</a>
-                        <a class="dropdown-item" href="#">Mahasiswa Aktif</a>
+                        <a class="dropdown-item" href="{{ route('himpunan.index') }}">Himpunan Mahasiswa</a>
+                        <a class="dropdown-item" href="{{ route('mahasiswa.index') }}">Mahasiswa Aktif</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://pmb.uir.ac.id/" target="_blank">
+                    Daftar
+                </a>
                 </li>
             </ul>
         </div>

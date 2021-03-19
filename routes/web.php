@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')
     ->name('home');
 
-Route::get('/news/{id}', 'NewsController@index')
+Route::get('/news/{slug}', 'NewsController@index')
     ->name('news');
 
 
@@ -38,6 +38,8 @@ Route::prefix('pages/pwk/uir/admin')
         Route::resource('teachers', 'TeacherController');
         Route::resource('sliders', 'SliderController');
         Route::resource('kurikulums', 'KurikulumController');
+        Route::resource('strukturs', 'StrukturController');
+        Route::resource('graduations', 'GraduationController');
     });
 
 
@@ -60,6 +62,8 @@ Route::prefix('akademik')
         // Route::get('/', 'KurikulumController@index')
         //     ->name('kurikulum');
         Route::resource('kurikulum', 'KurikulumController');
+        Route::resource('rps', 'RpsController');
+        Route::resource('sap', 'SapController');
     });
 // End Academy
 
@@ -72,4 +76,36 @@ Route::prefix('dosen')
     });
 // End Dosen
 
-Auth::routes(['verify' => true, 'register' => true]);
+// Alumni
+Route::prefix('alumni')
+    ->group(function () {
+        // Route::get('/', 'PhotoAlumniController@index')
+        //     ->name('photo');
+        Route::resource('photo', 'PhotoAlumniController');
+    });
+// End Alumni
+
+// Penelitian & Inovasi
+Route::prefix('penelitian-inovasi')
+    ->group(function () {
+        // Route::resource('')
+    });
+// End Penelitian & Inovasi
+
+// Kegiatan Mahasiswa
+Route::prefix('kegiatan-mahasiswa')
+    ->group(function () {
+        Route::resource('mahasiswa', 'MahasiswaController');
+        Route::resource('himpunan', 'HimpunanController');
+    });
+// End Kegiatan Mahasiswa
+
+// Kegiatan Mahasiswa
+Route::prefix('penelitian-inovasi')
+    ->group(function () {
+        Route::resource('jurnal', 'JurnalistikController');
+        // Route::resource('himpunan', 'HimpunanController');
+    });
+// End Kegiatan Mahasiswa
+
+Auth::routes(['verify' => true, 'register' => false]);

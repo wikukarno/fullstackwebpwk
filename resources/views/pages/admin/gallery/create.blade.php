@@ -25,6 +25,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="photo" class="form-control-label">Foto</label>
+                    <span class="ml-5">Max:255kb (.jpg)</span>
                     <input  type="file"
                             name="photo" 
                             value="{{ old('photo') }}" 

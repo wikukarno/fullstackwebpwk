@@ -18,6 +18,7 @@ class CreateNewsTable extends Migration
             $table->string('photo');
             $table->date('date');
             $table->string('title');
+            $table->string('slug');
             $table->longText('content');
             $table->longText('thumbnail');
             $table->softDeletes();

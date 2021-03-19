@@ -15,15 +15,15 @@
         <div class="container">
             <div class="row">
                 <div class="mail-services mt-3 ml-lg-3">
-                    <a href="#"><i class="fas fa-envelope"></i> info@uir.ac.id
+                    <a href="#"><i class="fas fa-envelope"></i> pwk@uir.ac.id
                     </a>
                 </div>
                 <span class="border mx-3"></span>
-                <div class="phone-services mt-3">
+                {{-- <div class="phone-services mt-3">
                     <a href="#">
                         <i class="fas fa-phone-alt"></i> +62.761.72126
                     </a>
-                </div>
+                </div> --}}
             </div>
         </div>
         <hr>
@@ -33,7 +33,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ ('/') }}">
                 <img src="{{ url('frontend/images/logo/Logo.png')}}" alt="">
             </a>
         </div>
@@ -58,7 +58,7 @@
         <i class="fas fa-chevron-up "></i>
     </a>
 
-    @include('includes.script')
+    @include('includes.about.script')
 </body>
 
 </html>

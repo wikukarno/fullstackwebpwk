@@ -43,7 +43,7 @@ class GalleriesController extends Controller
     {
         $data = $request->all();
         $data['photo'] = $request->file('photo')->store(
-            'assets/product',
+            'assets/galleries',
             'public'
         );
 
@@ -84,11 +84,11 @@ class GalleriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(GalleriesRequest $request, $id)
+    public function update(Request $request, $id)
     {
         $data = $request->all();
         $data['photo'] = $request->file('photo')->store(
-            'assets/product',
+            'assets/galleries',
             'public'
         );
 

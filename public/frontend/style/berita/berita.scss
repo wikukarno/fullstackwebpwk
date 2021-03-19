@@ -8,6 +8,13 @@ html {
     scroll-behavior: smooth;
 }
 
-.section-news-content {
-    margin-top: -50px;
+.section-news-detail {
+    // margin-top: -50px;
+    h3 {
+        font-family: "Playfair Display";
+        font-weight: bold;
+        font-size: 32px;
+        color: #004420;
+        margin-bottom: 30px;
+    }
 }

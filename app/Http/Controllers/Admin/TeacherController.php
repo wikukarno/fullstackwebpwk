@@ -43,7 +43,7 @@ class TeacherController extends Controller
     {
         $data = $request->all();
         $data['photo'] = $request->file('photo')->store(
-            'assets/product',
+            'assets/teacher',
             'public'
         );
 
@@ -88,7 +88,7 @@ class TeacherController extends Controller
     {
         $data = $request->all();
         $data['photo'] = $request->file('photo')->store(
-            'assets/product',
+            'assets/teacher',
             'public'
         );
 

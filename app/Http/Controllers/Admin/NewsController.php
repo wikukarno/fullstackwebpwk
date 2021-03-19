@@ -6,6 +6,7 @@ use App\Http\Requests\Admin\NewsRequest;
 use App\Http\Controllers\Controller;
 use App\Models\Admin\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class NewsController extends Controller
 {
@@ -42,8 +43,9 @@ class NewsController extends Controller
     public function store(NewsRequest $request)
     {
         $data = $request->all();
+        $data['slug'] = Str::slug($request->title);
         $data['photo'] = $request->file('photo')->store(
-            'assets/product',
+            'assets/news',
             'public'
         );
 
@@ -85,11 +87,12 @@ class NewsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(NewsRequest $request, $id)
     {
         $data = $request->all();
+        $data['slug'] = Str::slug($request->title);
         $data['photo'] = $request->file('photo')->store(
-            'assets/product',
+            'assets/news',
             'public'
         );
 

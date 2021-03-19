@@ -99,7 +99,24 @@
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Custom Components:</h6>
         <a class="collapse-item" href="{{ route('teachers.index')}}">Daftar Dosen</a>
-        <a class="collapse-item" href="{{ route('videos.index')}}">Struktur Organisasi</a>
+        <a class="collapse-item" href="{{ route('strukturs.index')}}">Struktur Organisasi</a>
+      </div>
+    </div>
+  </li>
+  <!-- Divider -->
+  <hr class="sidebar-divider">
+
+
+  <!-- Nav Item - Pages Collapse Menu -->
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGraduation" aria-expanded="true" aria-controls="collapseGraduation">
+      <i class="fas fa-fw fa-user-graduate"></i>
+      <span>Alumni</span>
+    </a>
+    <div id="collapseGraduation" class="collapse" aria-labelledby="headingGraduation" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Custom Components:</h6>
+        <a class="collapse-item" href="{{ route('graduations.index')}}">Daftar Alumni</a>
       </div>
     </div>
   </li>

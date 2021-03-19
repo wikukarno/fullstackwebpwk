@@ -36,7 +36,7 @@
         .navbar-brand {
             img {
                 margin-top: 5px;
-                max-height: 50px;
+                max-height: 45px;
             }
         }
         .nav-item {
@@ -99,7 +99,7 @@
     // End Hero
     // Statistik
     .section-statistic-content {
-        margin-top: 100px;
+        margin-top: 70px;
     }
     
     // End Statistik
@@ -125,10 +125,11 @@
                 color: #004420;
             }
             .news-content {
+                margin-top: -5px;
                 font-weight: normal;
                 font-size: 16px;
                 color: #000;
-                max-height: 350px !important;
+                // max-height: 30px !important;
                 p {
                     word-wrap: break-word;
                     text-overflow: ellipsis;
@@ -137,6 +138,7 @@
                 }
             }
             .btn-next {
+                // margin-top: -20px;
                 font-size: 16px;
                 font-weight: 300;
                 color: #fff;
@@ -184,6 +186,9 @@
             font-weight: 500;
             font-size: 20px;
             color: #0c562e;
+        }
+        img {
+            max-height: 344px !important;
         }
     }
     
