@@ -23,6 +23,9 @@ Route::get('/', 'HomeController@index')
 Route::get('/news/{slug}', 'NewsController@index')
     ->name('news');
 
+Route::get('/daftar', 'DaftarController@daftar')
+    ->name('daftar');
+
 
 File::link(storage_path('app/public'), public_path('storage'));
 

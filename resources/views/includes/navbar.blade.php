@@ -13,7 +13,7 @@
                 </a>
             </div> --}}
             
-                <a class="nav-link mt-2 ml-auto text-dark" style="font-size: 14px;" href="https://pmb.uir.ac.id/" target="_blank">
+                <a class="nav-link mt-2 ml-auto text-dark" style="font-size: 14px;" href="{{ route('daftar')}}">
                     Daftar
                 </a>
             <a class="nav-link mt-2 text-dark" style="font-size: 14px;" href="{{ route('login')}}">
@@ -98,7 +98,7 @@
                     </div>
                 </li>
                 <li class="button-mobile d-sm-block d-md-none mt-3">
-                    <a href="https://pmb.uir.ac.id/" class="btn btn-daftar my-sm-0 btn-block" target="blank">
+                    <a href="{{ route('daftar')}}" class="btn btn-daftar my-sm-0 btn-block">
                         Daftar
                     </a>
                 </li>
