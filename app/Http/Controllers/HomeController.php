@@ -14,13 +14,11 @@ class HomeController extends Controller
 
     public function index(Request $request)
     {
-        $item = Statistic::all();
         $news = News::all();
         $gallery = Galleries::all();
         $video = Video::all();
-        $slider = Slider::all()->take(1);
+        $slider = Slider::all();
         return view('home', [
-            'items' => $item,
             'newses' => $news,
             'galleries' => $gallery,
             'videos' => $video,

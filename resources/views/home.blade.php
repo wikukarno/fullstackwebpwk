@@ -6,54 +6,32 @@ PWK-Universitas-Islam-Riau
 
 @section('content')
     <!-- Hero -->
-    <section class="section-hero-content">
-        <div class="hero-items owl-carousel">
-            <div class="single-hero-items set-bg img-fluid" data-setbg="{{ url('frontend/images/hero/brosure.jpg')}}">
+    <section class="section-hero-content d-none d-lg-block">
+        <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
+            <div class="carousel-inner hero-items owl-carousel">
+                @foreach ($sliders as $key =>$slider)
+                    <div class="single-hero-items {{$key == 0 ? 'active' : '' }}">
+                        <img class="d-block w-100" src="{{ Storage::url($slider->photo) }}" alt="First slide">
+                    </div>
+                @endforeach
             </div>
-            <div class="single-hero-items set-bg img-fluid" data-setbg="{{ url('frontend/images/hero/hero_1.jpg')}}">
-            </div>
-            <div class="single-hero-items set-bg img-fluid" data-setbg="{{ url('frontend/images/hero/hero_2.jpg')}}">
-            </div>
-            <div class="single-hero-items set-bg img-fluid" data-setbg="{{ url('frontend/images/hero/hero_3.jpg')}}">
-            </div>
-        </div>
+          </div>
     </section>
     <!-- End Hero -->
 
-    <!-- Statistik -->
-    <section class="section-statistic-content">
+    {{-- Hero Mobile --}}
+    <section class="section-hero-mobile d-lg-none">
         <div class="container">
             <div class="row">
-                @foreach ($items as $item)
-                <div class="col-sm-4 col-md-2 text-center" data-aos="fade-down" data-aos-delay="100">
-                    <i class="fas fa-user-graduate"></i>
-                    <p>{{ $item->alumni }} Lulusan</p>
+                <div class="col-12 text-center">
+                    <h5>Selamat Datang <br> di Program Studi</h5>
+                    <h1>Perencanaan Wilayah & Kota</h1>
+                    <a href="#" class="btn btn-daftar mt-3">Daftar</a>
                 </div>
-                <div class="col-sm-4 col-md-2 text-center" data-aos="fade-down" data-aos-delay="300">
-                    <i class="fas fa-user-alt"></i>
-                    <p>{{ $item->mahasiswa }}+ Mahasiswa</p>
-                </div>
-                <div class="col-sm-4 col-md-2 text-center" data-aos="fade-down" data-aos-delay="500">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <p>{{ $item->dosen }} Dosen</p>
-                </div>
-                <div class="col-sm-4 col-md-2 text-center" data-aos="fade-down" data-aos-delay="700">
-                    <i class="fas fa-building"></i>
-                    <p>{{ $item->gedung }} Gedung</p>
-                </div>
-                <div class="col-sm-4 col-md-2 text-center" data-aos="fade-down" data-aos-delay="900">
-                    <i class="fas fa-medal"></i>
-                    <p>{{ $item->prestasi }} Prestasi</p>
-                </div>
-                <div class="col-sm-4 col-md-2 text-center" data-aos="fade-down" data-aos-delay="1100">
-                    <i class="fas fa-desktop"></i>
-                    <p>{{ $item->labor }} Labor</p>
-                </div>
-                @endforeach
             </div>
         </div>
     </section>
-    <!-- End Statistik -->
+    {{-- End Hero Mobile --}}
 
     <!-- News -->
     <section class="section-news-content" id="berita">
@@ -68,6 +46,7 @@ PWK-Universitas-Islam-Riau
                         <div class="feature-img-hover">
                             <div class="img-content-news">
                                 <img src="{{ Storage::url($news->photo) }}" class="figure-img img-fluid align-self-center w-100 rounded">
+                                {{-- <img src="{{ Storage::url($news->photo) }}" class="figure-img img-fluid align-self-center w-100 rounded"> --}}
                             </div>
                             <a href="{{ route('news', $news->slug) }}" class="d-flex justify-content-center">
                                 <img src="{{ url('frontend/images/news/eye.png')}}" class="img-fluid align-self-center" alt="">

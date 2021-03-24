@@ -45,7 +45,7 @@ class NewsController extends Controller
         $data = $request->all();
         $data['slug'] = Str::slug($request->title);
         $data['photo'] = $request->file('photo')->store(
-            'assets/news',
+            'public/asset',
             'public'
         );
 

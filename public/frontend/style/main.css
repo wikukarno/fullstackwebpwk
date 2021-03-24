@@ -41,7 +41,7 @@ html {
 }
 
 .navbar .nav-item .nav-link {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #6D6D6D;
 }
@@ -53,6 +53,18 @@ html {
 .navbar .nav-item a.active {
   font-weight: 600;
   color: #004420 !important;
+}
+
+.navbar .button-mobile a {
+  font-size: 14px;
+  background-color: #004420;
+  color: #fff;
+}
+
+.navbar .button-mobile .btn-masuk-mobile {
+  font-size: 14px;
+  background: #008a40;
+  color: #fff;
 }
 
 .navbar-dark {
@@ -81,9 +93,42 @@ html {
   color: #fff !important;
 }
 
+.navbar-dark .button-mobile a {
+  font-size: 14px;
+  background-color: #069F4D;
+  color: #fff;
+}
+
+.navbar-dark .button-mobile .btn-masuk-mobile {
+  font-size: 14px;
+  background: rgba(6, 159, 77, 0.53);
+  color: #fff;
+}
+
 .section-hero-content .hero-items .single-hero-items {
   background-size: cover;
   height: 525px;
+}
+
+.section-hero-mobile {
+  margin-top: 90px;
+}
+
+.section-hero-mobile h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.section-hero-mobile h1 {
+  font-family: "PlayfairDisplay";
+  font-weight: 600;
+  color: #004420;
+}
+
+.section-hero-mobile .btn-daftar {
+  color: #fff;
+  background-color: #004420;
 }
 
 .section-statistic-content {

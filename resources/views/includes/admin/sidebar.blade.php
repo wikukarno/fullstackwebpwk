@@ -18,14 +18,14 @@
 
   <!-- Nav Item - Pages Collapse Menu -->
   <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseslider" aria-expanded="true" aria-controls="collapseslider">
       <i class="fas fa-fw fa-chart-bar"></i>
-      <span>Statistic</span>
+      <span>Sliders</span>
     </a>
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+    <div id="collapseslider" class="collapse" aria-labelledby="headingslider" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Custom Components:</h6>
-        <a class="collapse-item" href="{{ route('statistic.index')}}">Daftar Statistik</a>
+        <a class="collapse-item" href="{{ route('sliders.index')}}">Daftar Slider</a>
         {{-- <a class="collapse-item" href="cards.html">Cards</a> --}}
       </div>
     </div>

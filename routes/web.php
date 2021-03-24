@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\File;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +24,9 @@ Route::get('/news/{slug}', 'NewsController@index')
     ->name('news');
 
 
+File::link(storage_path('app/public'), public_path('storage'));
+
+
 
 
 Route::prefix('pages/pwk/uir/admin')
@@ -31,7 +36,6 @@ Route::prefix('pages/pwk/uir/admin')
         Route::get('/', 'DashboardController@index')
             ->name('dashboard');
 
-        Route::resource('statistic', 'StatisticController');
         Route::resource('newses', 'NewsController');
         Route::resource('galleries', 'GalleriesController');
         Route::resource('videos', 'VideoController');
@@ -57,7 +61,6 @@ Route::prefix('about')
 
 // Academy
 Route::prefix('akademik')
-    // ->namespace('Akademik')
     ->group(function () {
         // Route::get('/', 'KurikulumController@index')
         //     ->name('kurikulum');

@@ -8,7 +8,6 @@
         scroll-behavior: smooth;
     }
     
-    // End Load
     .header-section {
         .mail-services a {
             font-size: 16px;
@@ -41,7 +40,7 @@
         }
         .nav-item {
             .nav-link {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 400;
                 color: #6D6D6D;
                 &:hover {
@@ -53,13 +52,21 @@
                 color: #004420 !important;
             }
         }
+        .button-mobile {
+            a {
+                font-size: 14px;
+                background-color: #004420;
+                color: #fff;
+            }
+            .btn-masuk-mobile {
+                font-size: 14px;
+                background: #008a40;
+                color: #fff;
+            }
+        }
     }
     
     // End Navbar
-    // Navbar Scroll
-    // .navbar-img {
-    //     background-image: url('../images/logo/Logo_Uir_Dark.png');
-    // }
     .navbar-dark {
         background: #004420;
         color: #fff !important;
@@ -83,6 +90,18 @@
                 }
             }
         }
+        .button-mobile {
+            a {
+                font-size: 14px;
+                background-color: #069F4D;
+                color: #fff;
+            }
+            .btn-masuk-mobile {
+                font-size: 14px;
+                background: rgba(6, 159, 77, 0.53);
+                color: #fff;
+            }
+        }
     }
     
     // End Navbar Scroll
@@ -93,6 +112,24 @@
                 background-size: cover;
                 height: 525px;
             }
+        }
+    }
+    
+    .section-hero-mobile {
+        margin-top: 90px;
+        h5 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #000;
+        }
+        h1 {
+            font-family: "PlayfairDisplay";
+            font-weight: 600;
+            color: #004420;
+        }
+        .btn-daftar {
+            color: #fff;
+            background-color: #004420;
         }
     }
     

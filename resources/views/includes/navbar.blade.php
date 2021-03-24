@@ -2,7 +2,7 @@
 <header class="header-section d-none d-md-block" id="header">
     <div class="container">
         <div class="row">
-            <div class="mail-services mt-3 ml-lg-3">
+            <div class="mail-services mt-3 ml-lg-3" style="font-size: 14px;">
                 <a href="#"><i class="fas fa-envelope"></i> pwk@uir.ac.id
                 </a>
             </div>
@@ -12,7 +12,15 @@
                     <i class="fas fa-phone-alt"></i> +62.761.72126
                 </a>
             </div> --}}
+            
+                <a class="nav-link mt-2 ml-auto text-dark" style="font-size: 14px;" href="https://pmb.uir.ac.id/" target="_blank">
+                    Daftar
+                </a>
+            <a class="nav-link mt-2 text-dark" style="font-size: 14px;" href="{{ route('login')}}">
+                Masuk
+            </a>
         </div>
+        
     </div>
     <hr>
 </header>
@@ -89,12 +97,29 @@
                         <a class="dropdown-item" href="{{ route('mahasiswa.index') }}">Mahasiswa Aktif</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://pmb.uir.ac.id/" target="_blank">
-                    Daftar
-                </a>
+                <li class="button-mobile d-sm-block d-md-none mt-3">
+                    <a href="https://pmb.uir.ac.id/" class="btn btn-daftar my-sm-0 btn-block" target="blank">
+                        Daftar
+                    </a>
+                </li>
+                <li class="button-mobile d-sm-block d-md-none mt-2">
+                    <a href="https://pmb.uir.ac.id/" class="btn btn-masuk-mobile my-sm-0 btn-block" target="blank">
+                        Masuk
+                    </a>
                 </li>
             </ul>
+            {{-- @guest
+                <!-- Mobile Button -->
+                <form class="form-inline d-sm-block d-md-none mt-3">
+                    <a href="https://pmb.uir.ac.id/" class="btn btn-login my-sm-0 btn-primary btn-block" target="blank">
+                        Daftar
+                    </a>
+                    <button class="btn btn-login my-sm-0 btn-masuk-mobile btn-block" type="button" onclick="event.preventDefault(); location.href='{{ url('login') }}';">
+                        Masuk
+                    </button>
+                </form>
+            <!-- End Mobile Button -->
+            @endguest --}}
         </div>
     </div>
 </nav>

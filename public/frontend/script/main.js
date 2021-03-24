@@ -14,7 +14,6 @@ $(".hero-items").owlCarousel({
     dots: false,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
-    navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
     smartSpeed: 1500,
     autoplay: true,
 });
