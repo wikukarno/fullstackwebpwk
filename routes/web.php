@@ -16,25 +16,22 @@ use Illuminate\Support\Facades\File;
 */
 
 
-
+// route home
 Route::get('/', 'HomeController@index')
     ->name('home');
 
+// route detail berita 
 Route::get('/news/{slug}', 'NewsController@index')
     ->name('news');
 
+// route pendaftaran
 Route::get('/daftar', 'DaftarController@daftar')
     ->name('daftar');
 
 
-File::link(storage_path('app/public'), public_path('storage'));
-
-
-
-
+// route admin
 Route::prefix('pages/pwk/uir/admin')
     ->namespace('Admin')
-    // ->Middleware(['auth', 'admin'])
     ->group(function () {
         Route::get('/', 'DashboardController@index')
             ->name('dashboard');
@@ -50,7 +47,7 @@ Route::prefix('pages/pwk/uir/admin')
     });
 
 
-// About
+// route About
 Route::prefix('about')
     ->namespace('About')
     ->group(function () {
@@ -62,7 +59,7 @@ Route::prefix('about')
     });
 // End About
 
-// Academy
+// route Academy
 Route::prefix('akademik')
     ->group(function () {
         // Route::get('/', 'KurikulumController@index')
@@ -73,7 +70,7 @@ Route::prefix('akademik')
     });
 // End Academy
 
-// Dosen
+// route Dosen
 Route::prefix('dosen')
     ->namespace('Dosen')
     ->group(function () {
@@ -82,7 +79,7 @@ Route::prefix('dosen')
     });
 // End Dosen
 
-// Alumni
+// route Alumni
 Route::prefix('alumni')
     ->group(function () {
         // Route::get('/', 'PhotoAlumniController@index')
@@ -91,14 +88,14 @@ Route::prefix('alumni')
     });
 // End Alumni
 
-// Penelitian & Inovasi
+// route Penelitian & Inovasi
 Route::prefix('penelitian-inovasi')
     ->group(function () {
         // Route::resource('')
     });
 // End Penelitian & Inovasi
 
-// Kegiatan Mahasiswa
+// route Kegiatan Mahasiswa
 Route::prefix('kegiatan-mahasiswa')
     ->group(function () {
         Route::resource('mahasiswa', 'MahasiswaController');
@@ -106,12 +103,12 @@ Route::prefix('kegiatan-mahasiswa')
     });
 // End Kegiatan Mahasiswa
 
-// Kegiatan Mahasiswa
+// route penelitian
 Route::prefix('penelitian-inovasi')
     ->group(function () {
         Route::resource('jurnal', 'JurnalistikController');
         // Route::resource('himpunan', 'HimpunanController');
     });
-// End Kegiatan Mahasiswa
+// End route penelitian
 
 Auth::routes(['verify' => true, 'register' => false]);
