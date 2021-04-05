@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\GalleriesRequest;
 use App\Models\Admin\Galleries;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Toaster;
 
 class GalleriesController extends Controller
 {
@@ -48,6 +49,11 @@ class GalleriesController extends Controller
         );
 
         Galleries::create($data);
+        if ($data) {
+            alert()->success('Berhasil', 'Data galeri berhasil ditambahkan');
+        } else {
+            alert()->error('Gagal', 'Data galeri gagal ditambahkan');
+        }
         return redirect()->route('galleries.index');
     }
 
@@ -95,7 +101,11 @@ class GalleriesController extends Controller
         $gallery = Galleries::findOrFail($id);
 
         $gallery->update($data);
-
+        if ($gallery) {
+            alert()->success('Berhasil', 'Data galeri berhasil ditambahkan');
+        } else {
+            alert()->success('Berhasil', 'Data galeri berhasil ditambahkan');
+        }
         return redirect()->route('galleries.index');
     }
 

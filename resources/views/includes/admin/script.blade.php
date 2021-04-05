@@ -14,7 +14,9 @@
 <!-- Page level custom scripts -->
 <script src="{{ url('backend/js/demo/chart-area-demo.js')}}"></script>
 <script src="{{ url('backend/js/demo/chart-pie-demo.js')}}"></script>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.ckeditor.com/ckeditor5/24.0.0/classic/ckeditor.js"></script>
 <script>
     ClassicEditor

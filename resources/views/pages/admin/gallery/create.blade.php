@@ -43,7 +43,7 @@
                            class="form-control @error('title') is-invalid @enderror"/>
                     @error('title') <div class="text-muted">{{ $message }}</div>@enderror
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">
+                <button type="submit" class="btn btn-primary btn-block create">
                     Simpan
                 </button>
             </form>
